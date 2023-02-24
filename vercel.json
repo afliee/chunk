@@ -1,5 +1,7 @@
 {
     "version": 2,
+    "installCommand": "npm install",
+    "public": true,
     "builds": [
         {
             "src": "./src/index.js",
