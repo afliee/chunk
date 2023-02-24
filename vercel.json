@@ -4,6 +4,13 @@
         {
             "src": "./src/index.js",
             "use": "@now/node"
+        },
+        {
+            "src": "**/*.json",
+            "use": "@now/static-build",
+            "config": {
+                "distDir": "dist"
+            }
         }
     ],
     "routes": [
