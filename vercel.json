@@ -6,11 +6,12 @@
             "use": "@now/node"
         },
         {
-            "src": "**/*.json",
-            "use": "@now/static-build",
-            "config": {
-                "distDir": "dist"
-            }
+            "src": "package.json",
+            "use": "@now/static-build"
+        },
+        {
+            "src": "package-lock.json",
+            "use": "@now/static-build"
         }
     ],
     "routes": [
