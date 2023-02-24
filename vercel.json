@@ -1,0 +1,43 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "package-lock.json",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "src/**/*.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "src/**/*.json",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "src/**/*.jsx",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "src/**/*.css",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "src/**/*.vue",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "src/**/*.ejs",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/src/index.js"
+        }
+    ]
+}
